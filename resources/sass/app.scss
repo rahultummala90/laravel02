@@ -1,1 +1,9 @@
-//
+$primary: blue;
+
+body {
+  color: $primary;
+}
+
+.div-gap {
+  margin-bottom: 20px;
+}
