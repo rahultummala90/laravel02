@@ -10,7 +10,11 @@
         <div>
             @foreach ($articles as $article)
                 <div class="content">
-                    <h3><a href="/articles/{{$article->id}}">{{$article->title}}</a></h3>
+                    <h3>
+                        <a href="{{ route('articles.show', $article) }}">
+                            {{$article->title}}
+                        </a>
+                    </h3>
                     <p>
                         <img src="https://via.placeholder.com/150" alt="" class="image" />
                     </p>
